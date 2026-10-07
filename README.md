@@ -1,7 +1,7 @@
 # Intelligent Lighting Research Web Application
 
-[![Backend CI](https://github.com/USERNAME/REPOSITORY/actions/workflows/backend.yml/badge.svg)](https://github.com/USERNAME/REPOSITORY/actions/workflows/backend.yml)
-[![Frontend CI](https://github.com/USERNAME/REPOSITORY/actions/workflows/frontend.yml/badge.svg)](https://github.com/USERNAME/REPOSITORY/actions/workflows/frontend.yml)
+[![Backend CI](https://github.com/Dinara-Zhukenova/research-web-app-methodology/actions/workflows/backend.yml/badge.svg)](https://github.com/Dinara-Zhukenova/research-web-app-methodology/actions/workflows/backend.yml)
+[![Frontend CI](https://github.com/Dinara-Zhukenova/research-web-app-methodology/actions/workflows/frontend.yml/badge.svg)](https://github.com/Dinara-Zhukenova/research-web-app-methodology/actions/workflows/frontend.yml)
 
 Веб-приложение для исследования энергопотребления обычного и адаптивного IoT-управления городской системой освещения.
 
@@ -158,7 +158,7 @@ research-web-app/
 
 ## Лицензия и цитирование
 
-Код распространяется по лицензии MIT. Информация для цитирования находится в `CITATION.cff`. Перед публикацией замените `USERNAME/REPOSITORY`, имя автора и контакты на собственные данные.
+Код распространяется по лицензии MIT. Информация для цитирования находится в `CITATION.cff`. Перед публикацией замените `Dinara-Zhukenova/research-web-app-methodology`, имя автора и контакты на собственные данные.
 
 ## Скриншоты приложения
 
