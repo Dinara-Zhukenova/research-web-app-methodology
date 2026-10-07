@@ -1,0 +1,11 @@
+.env
+.venv/
+node_modules/
+.next/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+
+ruff-errors.txt

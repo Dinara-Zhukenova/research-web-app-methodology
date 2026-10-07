@@ -1,0 +1,1 @@
+"""Lighting measurements domain module."""

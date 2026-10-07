@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root { color-scheme: light; --blue: #155e75; --orange: #ea580c; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f7fb; color: #172033; font-family: Arial, sans-serif; }
+a { color: inherit; text-decoration: none; }
+header { background: #123650; color: white; }
+nav { max-width: 1120px; margin: auto; padding: 16px; display: flex; gap: 22px; align-items: center; flex-wrap: wrap; }
+main { max-width: 1120px; margin: auto; padding: 28px 16px 60px; }
+.brand { font-weight: 800; margin-right: auto; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.card, .panel { background: white; border: 1px solid #d9e2ec; border-radius: 14px; padding: 18px; box-shadow: 0 5px 18px #14324a10; }
+.value { font-size: 30px; font-weight: 800; color: var(--blue); margin: 8px 0; }
+.muted { color: #5b6877; }
+.toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: end; }
+input, select, textarea { width: 100%; border: 1px solid #aab7c4; border-radius: 8px; padding: 10px; font: inherit; background: white; }
+label { display: grid; gap: 6px; font-weight: 600; }
+button, .button { border: 0; border-radius: 8px; padding: 10px 15px; background: var(--blue); color: white; cursor: pointer; font-weight: 700; }
+.danger { background: #b91c1c; }
+.secondary { background: white; color: #173b5e; border: 1px solid #8da1b3; }
+table { width: 100%; border-collapse: collapse; background: white; }
+th, td { padding: 11px; border-bottom: 1px solid #dce4ea; text-align: left; }
+th { background: #e9f2f7; }
+.table-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid #d9e2ec; }
+.actions { display: flex; gap: 10px; justify-content: space-between; margin-top: 18px; }
+.error { color: #b91c1c; background: #fee2e2; padding: 10px; border-radius: 8px; }
+.form { display: grid; gap: 15px; max-width: 720px; }
+h1 { line-height: 1.2; }
+@media (max-width: 800px) { .grid { grid-template-columns: 1fr; } nav { gap: 12px; } th, td { min-width: 120px; } }
