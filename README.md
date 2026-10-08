@@ -100,7 +100,7 @@ uv sync
 uv run ruff check .
 uv run pytest -q
 
-cd ..\frontend
+cd ..frontend
 npm install
 npm run lint
 npm run build
@@ -108,32 +108,81 @@ npm run build
 
 ## Структура
 
-```text
-research-web-app/
+research-web-app-methodology/
+├── README.md
+├── LICENSE
+├── CITATION.cff
+├── .gitignore
+├── .env.example
+├── docker-compose.yml
+├── docker-compose.prod.yml
+├── Caddyfile
 ├── .github/
 │   ├── dependabot.yml
 │   └── workflows/
+│       ├── backend.yml
+│       └── frontend.yml
 ├── backend/
+│   ├── Dockerfile
+│   ├── .dockerignore
+│   ├── pyproject.toml
+│   ├── uv.lock
+│   ├── alembic.ini
 │   ├── alembic/
+│   │   ├── env.py
+│   │   └── versions/
+│   │       └── 20261008_01_create_measurements.py
 │   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   ├── db.py
 │   │   ├── core/
-│   │   └── modules/measurements/
-│   │       ├── models.py
-│   │       ├── schemas.py
-│   │       ├── service.py
-│   │       └── router.py
-│   ├── scripts/seed.py
+│   │   │   ├── __init__.py
+│   │   │   └── config.py
+│   │   └── modules/
+│   │       ├── __init__.py
+│   │       └── measurements/
+│   │           ├── __init__.py
+│   │           ├── models.py
+│   │           ├── schemas.py
+│   │           ├── service.py
+│   │           └── router.py
+│   ├── scripts/
+│   │   └── seed.py
 │   └── tests/
+│       ├── conftest.py
+│       └── test_measurements.py
 ├── frontend/
+│   ├── Dockerfile
+│   ├── .dockerignore
+│   ├── next.config.ts
+│   ├── package.json
 │   └── src/
 │       ├── app/
+│       │   ├── layout.tsx
+│       │   ├── page.tsx
+│       │   └── measurements/
+│       │       ├── actions.ts
+│       │       ├── page.tsx
+│       │       ├── new/
+│       │       │   └── page.tsx
+│       │       └── [id]/
+│       │           └── page.tsx
 │       ├── components/
+│       │   └── MeasurementForm.tsx
 │       └── lib/
-├── docs/
-├── docker-compose.yml
-├── LICENSE
-└── CITATION.cff
-```
+│           ├── api.ts
+│           └── types.ts
+├── database/
+│   └── research.sql
+└── docs/
+    ├── architecture.md
+    ├── compliance.md
+    ├── defense.md
+    └── screenshots/
+        ├── 01-home-page.png
+        ├── 02-swagger-api.png
+        └── 03-measurements-list.png
 
 ## Данные
 
