@@ -106,8 +106,9 @@ npm run lint
 npm run build
 ```
 
-## Структура
+## Структура проекта
 
+```text
 research-web-app-methodology/
 ├── README.md
 ├── LICENSE
@@ -183,6 +184,7 @@ research-web-app-methodology/
         ├── 01-home-page.png
         ├── 02-swagger-api.png
         └── 03-measurements-list.png
+```
 
 ## Данные
 
